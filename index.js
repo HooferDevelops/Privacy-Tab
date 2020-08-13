@@ -31,7 +31,7 @@ module.exports = class PrivacyTab extends Plugin {
         style = document.createElement('style');
         document.head.appendChild(style);
         style.type = 'text/css';
-        style.appendChild(document.createTextNode(`.layerContainer-yqaFcK * { transition: .3s linear; }`));
+        style.appendChild(document.createTextNode(`.layerContainer-yqaFcK { transition: .3s linear; }`));
 
         // register settings
         powercord.api.settings.registerSettings(this.entityID, {
@@ -75,11 +75,11 @@ module.exports = class PrivacyTab extends Plugin {
             }
             var blurAmount = get("blur-scale")*3;
             blurElement.style = `transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale};`;
-            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK * { transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale}; }`), style.childNodes[0]);
+            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK { transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale}; }`), style.childNodes[0]);
         } else {
             // disable blur, durr
             blurElement.style = `transition: .3s linear;`;
-            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK * { transition: .3s linear; }`), style.childNodes[0]);
+            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK { transition: .3s linear; }`), style.childNodes[0]);
         }
 
     }
