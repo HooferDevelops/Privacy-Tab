@@ -4,8 +4,8 @@ Hide your Discord Client from people who shouldn't see it. Useful for a broad ra
 Honorable Mentions: LuckFire#4800, NovalFuzzy#0004
 
 ## Pictures
-![Toggling Preview](https://cdn.discordapp.com/attachments/738968109288914976/743354913643298816/VkKZn51qfm.gif)
-![Settings Menu Preview](https://cdn.discordapp.com/attachments/738968109288914976/743356526462500874/Q3cON01s7J.gif)
+![Toggling Preview](https://cdn.discordapp.com/attachments/738968109288914976/743358188455329792/2Vj9UrxP4U.gif)
+![Settings Menu Preview](https://cdn.discordapp.com/attachments/738968109288914976/743358351894904862/NVIDIA_Share_ux5FFBq4qn.png)
 
 ## Quick Installation
 Go to your plugins folder and run the following:
