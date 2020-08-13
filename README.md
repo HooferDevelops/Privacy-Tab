@@ -4,7 +4,7 @@ Hide your Discord Client from people who shouldn't see it. Useful for a broad ra
 Honorable Mentions: LuckFire#4800, NovalFuzzy#0004
 
 ## Pictures
-![Toggling Preview](https://cdn.discordapp.com/attachments/738968109288914976/743354913643298816/VkKZn51qfm.gif)
+![Toggling Preview](https://cdn.discordapp.com/attachments/738968109288914976/743358814366990336/m3Vymbrelt.gif)
 ![Settings Menu Preview](https://cdn.discordapp.com/attachments/738968109288914976/743358351894904862/NVIDIA_Share_ux5FFBq4qn.png)
 
 ## Quick Installation
