@@ -74,9 +74,11 @@ module.exports = class PrivacyTab extends Plugin {
                 grayscale = "grayscale(100%)"
             }
             blurElement.style = `transition: .3s linear; filter: blur(${get("blur-scale")*3}px) ${grayscale};`;
+            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK * { blur(${get("blurscale")*3}px) }`), style.childNodes[0]);
         } else {
             // disable blur, durr
             blurElement.style = `transition: .3s linear;`;
+            style.replaceChild(document.createTextNode(``), style.childNodes[0]);
         }
 
     }
