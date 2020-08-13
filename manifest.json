@@ -1,0 +1,8 @@
+{
+    "name": "Privacy Tab",
+    "version": "1.0.0",
+    "description": "Hide your stuff, why would you need this? ;)",
+    "author": "Hoofers#0001 | iman.engineer",
+    "license": "MIT",
+    "permissions": [ "keypresses" ]
+}
