@@ -5,7 +5,7 @@ const { Divider } = require('powercord/components')
 module.exports = class Settings extends React.PureComponent {
     constructor (props) {
         super(props);
-        this.plugin = powercord.pluginManager.get('privacy-tab');
+        this.plugin = powercord.pluginManager.get('Privacy-Tab') || powercord.pluginManager.get('Privacy-Tab-master');
       }
 
 
