@@ -17,10 +17,16 @@ module.exports = class Settings extends React.PureComponent {
             defaultValue={'Ctrl+Shift+P'}
             initialValue={this.props.getSetting('toggle-keybind-value', 'Ctrl+Shift+P')}
             onChange={val => { 
+                if (!this.props.getSetting('toggle-keybind-value')){
+                    this.props.setSetting('toggle-keybind-value', "Ctrl+Shift+P")
+                }
                 this.plugin.updateKeybinds(this.props.getSetting('toggle-keybind-value'), val);
                 this.props.updateSetting('toggle-keybind-value', val); 
             }}
             onReset={()=>{
+                if (!this.props.getSetting('toggle-keybind-value')){
+                    this.props.setSetting('toggle-keybind-value', "Ctrl+Shift+P")
+                }
                 this.plugin.updateKeybinds(this.props.getSetting('toggle-keybind-value'), 'Ctrl+Shift+P');
                 this.props.updateSetting('toggle-keybind-value', 'Ctrl+Shift+P');
             }}
