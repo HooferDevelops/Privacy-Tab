@@ -42,6 +42,15 @@ module.exports = class Settings extends React.PureComponent {
         >
             Global Keybind
         </SwitchItem>
+        <SwitchItem
+            value={ this.props.getSetting('lock-app') }
+            onChange={ () => {
+                this.props.toggleSetting('lock-app')
+            }}
+            note='Whilist being hidden, you will not be able to interact with discord.'
+        >
+            Lock Application
+        </SwitchItem>
         <br></br>
         <SliderInput
                minValue={0.5}

@@ -24,6 +24,8 @@ module.exports = class PrivacyTab extends Plugin {
             set("blur-scale", 1);
         if (!get("grayscale"))
             set("grayscale", false);
+        if (!get("lock-app"))
+            set("lock-app", true);
         
         // init
         globalShortcut.register(get("toggle-keybind-value"), this.togglePrivacy);
@@ -73,9 +75,13 @@ module.exports = class PrivacyTab extends Plugin {
             if (get("grayscale")){
                 grayscale = "grayscale(100%)"
             }
+            var interaction = "";
+            if (get("lock-app")){
+                interaction = "* { pointer-events: none; }"
+            }
             var blurAmount = get("blur-scale")*3;
             blurElement.style = `transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale};`;
-            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK { transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale}; }`), style.childNodes[0]);
+            style.replaceChild(document.createTextNode(`.layerContainer-yqaFcK { transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale}; } ${interaction}`), style.childNodes[0]);
         } else {
             // disable blur, durr
             blurElement.style = `transition: .3s linear;`;
