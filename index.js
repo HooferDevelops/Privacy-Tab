@@ -77,7 +77,7 @@ module.exports = class PrivacyTab extends Plugin {
             }
             var interaction = "";
             if (get("lock-app")){
-                interaction = "* { pointer-events: none; }"
+                interaction = "* { pointer-events: none !important; }"
             }
             var blurAmount = get("blur-scale")*3;
             blurElement.style = `transition: .3s linear; filter: blur(${blurAmount}px) ${grayscale};`;
